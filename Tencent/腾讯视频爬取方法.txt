@@ -1,0 +1,12 @@
+首先腾讯视频的评论数据是要分开获得，网络综艺与其他两类不同
+网络综艺要先通过这个地址获取其comment_id
+https://ncgi.video.qq.com/fcgi-bin/video_comment_id?op=3&cid=e7ewrmdijejinz5
+然后才能使用得到的comment_id在下面这个地址获取评论
+https://video.coral.qq.com/varticle/2397091186/comment/v2?orinum=30
+
+这个是电脑端获得评论的页面，里面的cursor参数可以指定爬取的时间
+https://video.coral.qq.com/varticle/1912549053/comment/v2?orinum=30&oriorder=o&pageflag=1&cursor=6381118327188107042
+
+手机端走的是这一条地址：
+"https://coral.qq.com/article/" + one_id + "/firstpage/comment/timeline?callback=jsonp3&commentid=" + one_id
+

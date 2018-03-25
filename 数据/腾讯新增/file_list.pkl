@@ -1,0 +1,11 @@
+(dp0
+V\u6709\u8a00\u5728\u4ed9
+p1
+(dp2
+S'sum'
+p3
+I2260
+sS'aveScore'
+p4
+F0.6811458333306967
+ss.
